@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+        <div>
+            <img src="./images/logo.png" alt="" srcset="">
+            <!-- <p>Contact Center</p> -->
+        </div>
+        <div>
+                <ul>
+                    <li>Pricing</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>##PHONE NUMBERS</li>
+                    <li>##PHONE NUMBERS</li>
+                </ul>
+            
+            <div class="login-create">
+                <button type="button" class="login">Login</button>
+                <button type="button" class="create" id="loginbut">Create Account</button>
+            </div>
+        </div>
+</header>
+
+<section class="section-1" id="first">
+    <div class="heading-container">
+        <p class="sub-headings">NEXT-GEN BUSINESS CALLING SOFTWARE</p>
+        <div class="sub-heading">HELPING BUSINESSES <span>CONNECT</span> WITH THIER CUSTOMERS</div>
+        <p class="sub-headings">KEY FEATURES</p>
+    </div>
+    <div class="features">
+                <button type="button" class="creates">Request a Demo</button>
+                <button type="button" class="create">Contact Sales</button>
+    </div>
+    <div class="sub-heading">How Aventium Contact Center Works</div>
+    <div class="abs">
+        <img src="./images/nin.png" alt="" srcset="">
+    </div>
+</section>
+<section class="section-2 hidden" id="login">
+    <div class="log1">
+        <p class="labels">Login</p>
+        <div>
+            <p class="label">Full name</p>
+            <input placeholder="Full name" type="text" name="" id="fullname">
+        </div>
+        <div>
+            <p class="label">Organization name</p>
+            <input placeholder="Organization name" type="text" name="" id="organizationname">
+        </div>
+        <div>
+            <p class="label">Organization id</p>
+            <input placeholder="Organization name" type="text" name="" id="organizationid">
+        </div>
+        <div>
+            <p class="label">Organization email</p>
+            <input placeholder="Organization name" type="email" name="" id="email">
+        </div>
+        <div>
+            <p class="label">Password</p>
+            <input placeholder="Password" type="password" name="" id="password">
+        </div>
+        <div>
+            <p class="label">Confirm Password</p>
+            <input placeholder="Password" type="password" name="" id="confirm">
+        </div>
+        <div>
+            <button type="button" class="create" id="signin">create</button>
+            <p class="">Dont have an account signup</p>
+        </div>
+    </div>
+    <div class="log2">
+        <img src="./images/login.png" alt="" class="login-img">
+    </div>
+</section>
+<section class="section-1 hidden" id="reports">
+    <div class="hs">
+        <h2>Reports</h2>
+                        <button type="button" class="create">Actions</button>
+    </div>
+            <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>S/N</th>
+                    <th>Full Name</th>
+                    <th>Organization Name</th>
+                    <th>Organization Email</th>
+                    <th>Organization ID</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="reports-table-body">
+                <!-- Rows will be inserted here -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            Page <span id="current-page">1</span> of <span id="total-pages">2</span>
+        </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

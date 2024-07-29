@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Documentation</h1>
+        
+        <div class="content-section">
+            <h2>Framework Used</h2>
+            <h3>Django REST Framework</h3>
+            <p>The backend API for this project is built using Django REST Framework, a powerful and flexible toolkit for building Web APIs in Django.</p>
+            <h3>Vanilla JavaScript</h3>
+            <p>The frontend interactions are implemented using vanilla JavaScript, which directly manipulates the DOM and handles asynchronous operations via Fetch API.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Database Used</h2>
+            <h3>PostgreSQL</h3>
+            <p>The project uses PostgreSQL as its database management system. PostgreSQL is a powerful, open-source object-relational database system known for its reliability, feature robustness, and performance.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Core Functionalities</h2>
+            
+            <h3>Data Fetching</h3>
+            <ul>
+                <li><strong>API Endpoint:</strong> The JavaScript code fetches user data from the API endpoint <code>http://127.0.0.1:8000/api/list-users/</code>.</li>
+                <li><strong>Data Handling:</strong> The fetched user data is logged to the console for verification and further processing.</li>
+            </ul>
+            
+            <h3>Dynamic Table Rendering</h3>
+            <ul>
+                <li><strong>User Data Display:</strong> The application dynamically renders user data in a table format on the webpage. Each row displays the following user details:
+                    <ul>
+                        <li>Full Name</li>
+                        <li>Organization Name</li>
+                        <li>Email</li>
+                        <li>Organization ID</li>
+                    </ul>
+                </li>
+                <li><strong>Action Buttons:</strong> Each row includes 'Edit' and 'Delete' buttons to allow users to modify or remove their data.</li>
+            </ul>
+            
+            <h3>User Profile Management</h3>
+            <ul>
+                <li><strong>Form Handling:</strong> The application provides forms for users to enter their details, including:
+                    <ul>
+                        <li>Full Name</li>
+                        <li>Organization Name</li>
+                        <li>Organization ID</li>
+                        <li>Email</li>
+                        <li>Password (and Password Confirmation for account creation)</li>
+                    </ul>
+                </li>
+                <li><strong>Data Pre-fill for Editing:</strong> When editing user details, the form fields are pre-filled with the existing data for ease of modification.</li>
+                <li><strong>Form Submission:</strong> The application handles form submission to update user details in the backend.</li>
+            </ul>
+            
+            <h3>User Data Editing</h3>
+            <ul>
+                <li><strong>Edit Functionality:</strong> Users can switch to edit mode to update their profile information.</li>
+                <li><strong>Dynamic UI Update:</strong> The interface updates dynamically to show the edit form with pre-filled data when the 'Edit' button is clicked.</li>
+                <li><strong>Data Update:</strong> Upon form submission, the updated user details are sent to the API to be saved.</li>
+            </ul>
+            
+            <h3>User Data Deletion</h3>
+            <ul>
+                <li><strong>Delete Functionality:</strong> Users can delete their profile information using the 'Delete' button.</li>
+                <li><strong>API Interaction:</strong> The delete function sends a DELETE request to the API endpoint to remove the user's data from the system.</li>
+            </ul>
+            
+            <h3>State Management</h3>
+            <ul>
+                <li><strong>Interface States:</strong> The application manages different states, such as:
+                    <ul>
+                        <li>Create view</li>
+                        <li>Edit view</li>
+                        <li>Report view</li>
+                    </ul>
+                </li>
+                <li><strong>Dynamic Content Display:</strong> Based on the current state, the interface updates to show or hide relevant sections to provide a smooth user experience.</li>
+            </ul>
+        </div>
+        
+        <div class="content-section">
+            <h2>Conclusion</h2>
+            <p>This project leverages Django REST Framework and vanilla JavaScript to create a dynamic and interactive user management system. The backend API handles data fetching, creating, updating, and deleting user information, while the frontend dynamically renders user data, manages form inputs, and provides a responsive interface for editing and deleting user details. PostgreSQL ensures robust and efficient data management. The clear separation of concerns between the backend and frontend ensures a robust and maintainable codebase, facilitating future enhancements and scalability.</p>
+        </div>
+    </div>
+</body>
+</html>

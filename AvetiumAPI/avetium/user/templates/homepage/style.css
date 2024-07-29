@@ -1,0 +1,146 @@
+body{
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+p {
+    font-size:16px;
+    line-height: 0px;
+}
+ul {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+}
+li {
+    margin-right: 20px;
+    color:rgb(195, 9, 46);
+    font-weight: 550;
+    font-size: 12px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+.login{
+    border-width: 0;
+    color: brown;
+    font-weight: 550;
+    padding: 10px;
+    background-color: transparent;
+}
+.login-create{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
+}
+.create{
+    padding:12px;
+    border-width: 0px;
+    border-radius: 24px;
+    color:white;
+    background-color:brown;
+    margin-left: 10px;
+}
+
+.creates {
+    padding: 12px;
+    border-width: 1px;
+    border-radius: 24px;
+    color: brown;
+    background-color: white;
+border-color: brown;
+}
+
+span {
+    color: brown;
+}
+.heading{
+    font-size: smaller;
+}
+.sub-heading {
+    font-size: 32px;
+    font-weight: 600;
+    line-height:38PX;
+}
+.sub-headings {
+    font-size: 12px;
+        color: brown;
+}
+.heading-container {
+    width: 450px;
+    margin-bottom: 40px;
+}
+.features{
+    margin-bottom: 120px;
+}
+.abs{
+    position: absolute;
+    right:0;
+bottom: 0;
+z-index: -10;
+}
+.section-1 {
+    /* background-color:black; */
+    position: relative;
+    padding: 60px 20px 0px 20px;
+}
+.section-2 {
+    /* background-color:black; */
+    position: relative;
+    padding: 60px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.log1{
+        flex:1;
+}
+.log2 {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    border-radius: 8px;
+    padding: 6px;
+    width: 90%;
+    margin-bottom: 16px;
+}
+.label{
+    font-size: 12px;
+    line-height: 1px;
+}
+.labels {
+color: brown;
+margin-bottom: 32px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    text-align: right;
+    margin: 20px 0;
+}
+.hs{
+flex-direction: row;
+display: flex;
+justify-content: space-between;
+}

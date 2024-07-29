@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>{{ user.full_name }}</h2>
+<p>Organization: {{ user.organization_name }}</p>
+<p>Email: {{ user.email }}</p>
+<p>Organization ID: {{ user.organization_id }}</p>
+<a href="{% url 'user_edit' user.pk %}">Edit</a>
+<a href="{% url 'user_delete' user.pk %}">Delete</a>
+{% endblock %}

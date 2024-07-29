@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>Users List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Organization Name</th>
+            <th>Organization Email</th>
+            <th>Organization ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.full_name }}</td>
+                <td>{{ user.organization_name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.organization_id }}</td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="4">No users found.</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
